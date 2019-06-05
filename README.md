@@ -17,7 +17,7 @@ Somos uma empresa de tecnologia, temos muito orgulho da nossa cultura de engenha
 
 Nós entendemos que construir um time com as pessoas certas é o que vai fazer a gente chegar longe. Por isso colocamos muito carinho no nosso processo seletivo e nos preocupamos em entender se o momento da pessoa está casado com o momento da empresa.
 
-Durante o nosso processo você vai conversar com diferentes pessoas do time: pessoas do time de recrutamento, produto, engenharia e por fim com os líderes da empresa. Fazemos isso para que você consiga entender melhor sobre como é trabalhar aqui e também porque as pessoas aqui entendem a responsabilidade e importância de trazer novas pessoas para o time.
+Durante o nosso processo você vai conversar com diferentes pessoas do time: recrutamento, produto, engenharia e por fim com líderes da empresa. Fazemos isso para que você consiga entender melhor como é trabalhar aqui e também porque aqui entendemos a responsabilidade e importância de trazer novas pessoas para o time.
 
 Nosso processo normalmente segue os seguintes steps (que podem variar em alguns casos específicos):
 
@@ -31,4 +31,4 @@ Nosso processo normalmente segue os seguintes steps (que podem variar em alguns 
 
     > Nota: alguns dos nossos desafios estão abertos aqui [nesse repositório](./desafios). Você pode tentar fazê-los para testar seus conhecimentos, mas para se candidatar para uma vaga precisa iniciar o processo pela candidatura no [Workable](https://pagarme.workable.com)
 
-* **3ª Entrevista**: você vai conversar com a liderança da nossa empresa. A ideia é você conhecer um pouco mais sobre a história e também se aprofundar no momento da empresa, tanto as coisas boas, quanto as coisas que precisam ser melhoradas. Espere bastante transparência nessa etapa.
+* **3ª Entrevista**: você vai conversar com alguém da liderança de nossa empresa. A ideia é você conhecer um pouco mais sobre a história e também se aprofundar no momento da empresa, tanto as coisas boas, quanto as coisas que precisam ser melhoradas. Espere bastante transparência nessa etapa.
