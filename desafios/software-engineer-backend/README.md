@@ -51,6 +51,7 @@ Você deve criar um serviço com os seguintes requisitos:
 1. O serviço deve ser escrito em Node.js
 2. O serviço deve armazenar informações em um banco de dados. Você pode escolher o banco que achar melhor. Aqui no Pagar.me usamos amplamente PostgreSQL
 3. O projeto deve ter um README.md com todas as instruções sobre como executar e testar o projeto e os serviços disponibilizados.
+4. O projeto deve conter testes automatizados.
 
 ## Avaliação
 
