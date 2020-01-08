@@ -56,7 +56,7 @@ Você deve criar um serviço com os seguintes requisitos:
        - Permitir que sejam removidos/alterados os itens no carrinho
        - Permitir a navegação para a página de finalização de pedido
    4. Finalização do pedido
-       - Deverá criar um _checkout_ integrado com a API Pagar.me utilizando a biblioteca pagarme-js https://github.com/pagarme/pagarme-js
+       - Deverá criar um _checkout_ (página para preenchimento de informações como dados do cartão e endereço) integrado com a API Pagar.me utilizando a biblioteca pagarme-js https://github.com/pagarme/pagarme-js
        - Deverá fazer o split de pagamento envolvendo dois recebedores
            - O vendedor do produto deve receber 85% do valor e ser responsável pelo taxa de processamento da transação;
            - A plataforma deve receber os 15% restante
