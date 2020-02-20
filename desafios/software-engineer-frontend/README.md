@@ -19,7 +19,7 @@ curl 'https://api.pagar.me/1/companies' -H 'Content-Type: application/json' --da
 - Em relação as _API_KEY's_ e outros dados: Para o desafio não é necessário o cuidado colocá-las num servidor
 - Lembre-se de utilizar a _API_KEY_ de teste
 - Lembre-se de não commitar dados sigilosos como suas _API_KEY's_.
-- Lembre-se de criar os recebedores que serão passados na _split rule_ de suas transações
+- Lembre-se de criar os recebedores que serão passados na _split rule_ de suas transações, estes recebedores sempre estarão vinculados à _API_KEY_ utilizada na criação dos mesmos.
 - Você pode acessar a documentação da api do Pagar.me no link https://docs.pagar.me/reference
 
 
@@ -39,14 +39,7 @@ Você deve criar um serviço com os seguintes requisitos:
            - O cliente poderá adicionar o produto ao carrinho ou ver seus detalhes
            - Deverá ser mostrado o nome, preço e valor do produto
        - Um botão ou elemento visual para possibilitar que o cliente veja seu carrinho de compras
-   2. Detalhe do produto
-       - Nome do produto
-       - Preço do produto
-       - Descrição do produto
-       - Id do vendedor (`recipient_id` que será passado na _splitrule_)
-       - Uma imagem do produto
-       - Botão para adicionar no carrinho
-   3. Carrinho
+   2. Carrinho
        - Deve mostrar os seguintes campos:
          - Nome do produto
          - Quantidade
@@ -55,7 +48,7 @@ Você deve criar um serviço com os seguintes requisitos:
          - Valor total do carrinho com todos os produtos somados
        - Permitir que sejam removidos/alterados os itens no carrinho
        - Permitir a navegação para a página de finalização de pedido
-   4. Finalização do pedido
+   3. Finalização do pedido
        - Deverá criar um _checkout_ (página para preenchimento de informações como dados do cartão e endereço) integrado com a API Pagar.me utilizando a biblioteca pagarme-js https://github.com/pagarme/pagarme-js
        - Deverá fazer o split de pagamento envolvendo dois recebedores
            - O vendedor do produto deve receber 85% do valor e ser responsável pelo taxa de processamento da transação;
