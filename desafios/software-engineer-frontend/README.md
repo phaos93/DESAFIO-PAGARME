@@ -36,7 +36,7 @@ Você deve criar um serviço com os seguintes requisitos:
 2. Requisitos das páginas:
    1. A página inicial da aplicação deverá conter:
        - Uma lista de pelo menos 10 produtos
-           - O cliente poderá adicionar o produto ao carrinho ou ver seus detalhes
+           - O cliente poderá adicionar o produto ao carrinho
            - Deverá ser mostrado o nome, preço e valor do produto
        - Um botão ou elemento visual para possibilitar que o cliente veja seu carrinho de compras
    2. Carrinho
