@@ -1,7 +1,7 @@
 <img src="https://github.com/pagarme.png" width="127px" height="127px" align="left"/>
 
 # Venha para o Pagar.me
-:handshake: Venha fazer parte do nosso time: [**estamos contratando!**](https://pagarme.gupy.io)
+:handshake: Venha fazer parte do nosso time: [**estamos contratando!**](https://boards.greenhouse.io/pagarme)
 
 ## Sobre o Pagar.me
 
@@ -11,7 +11,7 @@ Fazemos parte do grupo [Stone Co.](https://stone.co) e juntos estamos transforma
 
 Somos uma empresa de tecnologia, temos muito orgulho da nossa cultura de engenharia e nos empenhamos para construir um time cheio de energia e disposto a resolver os problemas da indústria com design, produto, tecnologia e com uma preocupação genuína com as pessoas.
 
-:point_right: [**Veja as nossas vagas em aberto**](https://pagarme.gupy.io/)
+:point_right: [**Veja as nossas vagas em aberto**](https://boards.greenhouse.io/pagarme)
 
 ## Nosso processo de contratação
 
@@ -21,7 +21,7 @@ Durante o nosso processo você vai conversar com diferentes pessoas do time: rec
 
 Nosso processo normalmente segue os seguintes steps (que podem variar em alguns casos específicos):
 
-* **Candidatura**: você pode se candidatar a uma de nossas vagas aqui: https://pagarme.gupy.io/
+* **Candidatura**: você pode se candidatar a uma de nossas vagas aqui: https://boards.greenhouse.io/pagarme
 
 * **Pré-conversa:** alguém do nosso time de recrutamento vai te ligar para confirmar algumas informações e para conhecer um pouco mais sobre você e sobre suas experiências.
 
@@ -29,6 +29,6 @@ Nosso processo normalmente segue os seguintes steps (que podem variar em alguns 
 
 * **2ª Entrevista**: essa é uma etapa para nos aprofundarmos na sua experiência técnica. Esse estágio varia de vaga para vaga, mas normalmente consiste em apresentar um case  ou realizar um desafio técnico. No caso do desafio técnico, você envia para gente, nós avaliamos e te chamamos para apresentar. Não acreditamos em "whiteboard interview": queremos entender como você trabalharia em cenários reais.
 
-    > Nota: alguns dos nossos desafios estão abertos aqui [nesse repositório](./desafios). Você pode tentar fazê-los para testar seus conhecimentos, mas para se candidatar para uma vaga precisa iniciar o processo pela candidatura no [Gupy](https://pagarme.gupy.io/)
+    > Nota: alguns dos nossos desafios estão abertos aqui [nesse repositório](./desafios). Você pode tentar fazê-los para testar seus conhecimentos, mas para se candidatar para uma vaga precisa iniciar o processo pela candidatura no [Greenhouse](https://boards.greenhouse.io/pagarme)
 
 * **3ª Entrevista**: você vai conversar com alguém da liderança de nossa empresa. A ideia é você conhecer um pouco mais sobre a história e também se aprofundar no momento da empresa, tanto as coisas boas, quanto as coisas que precisam ser melhoradas. Espere bastante transparência nessa etapa.
