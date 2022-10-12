@@ -1,12 +1,21 @@
-export class Payable {
-    id: number;
-    status: string;
-    data_pagamento: Date;
-    transacao_id: number;
+import { Table, Model, Column, DataType } from "sequelize-typescript";
 
-    constructor(status: string, data_pagamento: Date, transacao_id: number) {
-        this.status = status;
-        this.data_pagamento = data_pagamento;
-        this.transacao_id = transacao_id;
-    }
+@Table
+export class Payable extends Model<Payable> {
+
+    @Column({
+        type: DataType.STRING,
+        allowNull: false,
+    })
+    status: string;
+    @Column({
+        type: DataType.DATE,
+        allowNull: false,
+    })
+    data_pagamento: Date;
+    @Column({
+        type: DataType.INTEGER,
+        allowNull: false,
+    })
+    transacao_id: number;
 }

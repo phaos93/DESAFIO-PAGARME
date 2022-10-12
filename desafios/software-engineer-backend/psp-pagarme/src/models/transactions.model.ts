@@ -1,20 +1,41 @@
-export class Transaction {
-    id: number;
-    valor: number;
-    descricao: string;
-    metodo_pagamento: string;
-    numero_cartao: string;
-    nome_cartao: string;
-    data_validade: Date;
-    codigo_CVV: string;
+import { Table, Model, Column, DataType } from "sequelize-typescript";
 
-    constructor(valor: number, descricao: string, metodo_pagamento: string, numero_cartao: string, nome_cartao: string, data_validade: Date, codigo_CVV: string) {
-        this.valor = valor;
-        this.descricao = descricao;
-        this.metodo_pagamento = metodo_pagamento;
-        this.numero_cartao = numero_cartao;
-        this.nome_cartao = nome_cartao;
-        this.data_validade = data_validade;
-        this.codigo_CVV = codigo_CVV;
-    }
+@Table
+export class Transaction extends Model<Transaction> {
+
+    @Column({
+        type: DataType.INTEGER,
+        allowNull: false,
+    })
+    valor: number;
+    @Column({
+        type: DataType.STRING(120),
+        allowNull: false,
+    })
+    descricao: string;
+    @Column({
+        type: DataType.STRING(15),
+        allowNull: false,
+    })
+    metodo_pagamento: string;
+    @Column({
+        type: DataType.STRING(16),
+        allowNull: false,
+    })
+    numero_cartao: string;
+    @Column({
+        type: DataType.STRING(60),
+        allowNull: false,
+    })
+    nome_cartao: string;
+    @Column({
+        type: DataType.DATE,
+        allowNull: false,
+    })
+    data_validade: Date;
+    @Column({
+        type: DataType.STRING(3),
+        allowNull: false,
+    })
+    codigo_CVV: string;
 }
