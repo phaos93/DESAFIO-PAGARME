@@ -4,7 +4,7 @@ import { Table, Model, Column, DataType } from "sequelize-typescript";
 export class Transaction extends Model<Transaction> {
 
     @Column({
-        type: DataType.INTEGER,
+        type: DataType.DECIMAL(20, 2),
         allowNull: false,
     })
     valor: number;

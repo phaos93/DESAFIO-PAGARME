@@ -1,31 +1,29 @@
-import { Controller, Get, Param, Post, Body, Put, Delete } from "@nestjs/common";
+import { Controller, Get, Param, Post, Body, HttpException, HttpStatus } from "@nestjs/common";
 import { Transaction } from "src/models/transactions.model";
-import { Payable } from "src/models/payables.model";
-import { TransactionsService } from "src/database/transactions.service";
-import { PayablesService } from "src/database/payables.service";
+import { TransactionsService } from "src/services/transactions.service";
 
 @Controller('transactions')
 export class TransactionController {
 
-    constructor(private transactionsService: TransactionsService, private payablesService: PayablesService) {
+    constructor(private transactionsService: TransactionsService) {
 
     }
 
     @Get()
-    getAllTransactions(): Transaction[] {
+    async getAllTransactions(): Promise<Transaction[]> {
         return this.transactionsService.getAll();
     }
 
     @Get(':id')
-    getOneTransaction(@Param() params): Transaction {
-        return this.transactionsService.getOne(1);
+    async getOneTransaction(@Param() params): Promise<Transaction> {
+        return this.transactionsService.getOne(params.id);
     }
 
     @Post()
-    postTransaction(@Body() transacao: Transaction): Payable {
-        //transacao.id = this.transactionsService.transactions.length + 1;
-        //this.transactionsService.post(transacao);
-        //this.payablesService.post(new Payable(transacao.metodo_pagamento === "debit_card" ? "paid" : "waiting_funds", new Date(), 1));
-        return this.payablesService.payables[1];
+    async postTransaction(@Body() transaction: Transaction) {
+        if (transaction.metodo_pagamento !== "debit_card" && transaction.metodo_pagamento !== "credit_card") {
+            throw new HttpException('metodo de pagamento inválido', HttpStatus.BAD_REQUEST);
+        }
+        this.transactionsService.post(transaction);
     };
-};
+}

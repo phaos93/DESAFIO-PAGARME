@@ -3,26 +3,29 @@ import { SequelizeModule } from '@nestjs/sequelize/dist/sequelize.module';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { TransactionController } from './controllers/transactions.controller';
-import { PayablesService } from './database/payables.service';
-import { TransactionsService } from './database/transactions.service';
+import { PayablesService } from './services/payables.service';
+import { TransactionsService } from './services/transactions.service';
 import { Payable } from './models/payables.model';
 import { Transaction } from './models/transactions.model';
+import { ConfigModule } from '@nestjs/config/dist/config.module';
+import { PayableController } from './controllers/payables.controller';
 
 @Module({
   imports: [
+    ConfigModule.forRoot(),
     SequelizeModule.forRoot({
       dialect: 'mysql',
-      host: 'localhost',
-      port: 3306,
-      username: 'root',
-      password: 'SQL123456',
-      database: 'psppagarme',
+      host: process.env.DB_HOST,
+      port: parseInt(process.env.DB_PORT),
+      username: process.env.DB_USER,
+      password: process.env.DB_PASSWORD,
+      database: process.env.DB_DATABASE,
       autoLoadModels: true,
       synchronize: true,
     }),
     SequelizeModule.forFeature([Transaction, Payable]),
   ],
-  controllers: [AppController, TransactionController],
+  controllers: [AppController, TransactionController, PayableController],
   providers: [AppService, TransactionsService, PayablesService],
 })
 export class AppModule { }
