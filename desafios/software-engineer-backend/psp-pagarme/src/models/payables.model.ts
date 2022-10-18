@@ -14,6 +14,11 @@ export class Payable extends Model<Payable> {
     })
     data_pagamento: Date;
     @Column({
+        type: DataType.STRING,
+        allowNull: false,
+    })
+    fee: string;
+    @Column({
         type: DataType.INTEGER,
         allowNull: false,
     })

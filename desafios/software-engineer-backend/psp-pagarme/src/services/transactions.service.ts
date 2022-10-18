@@ -36,12 +36,15 @@ export class TransactionsService {
 
     async post(transaction: Transaction) {
         transaction.numero_cartao = formatCard(transaction.numero_cartao);
-        transaction.valor = parseFloat(formatValue(transaction.valor));
+        transaction.valor = transaction.metodo_pagamento === "debit_card" ? parseFloat(formatValue(transaction.valor - (transaction.valor * 0.03))) : parseFloat(formatValue(transaction.valor - (transaction.valor * 0.05)));
         this.transactionModel.create(transaction);
         const transactionId = await this.getLastOne() + 1
+        const date = new Date()
+        const paymentDate = transaction.metodo_pagamento === "debit_card" ? new Date() : new Date(date.setDate(date.getDate() + 30));
         this.payableModel.create({
             status: transaction.metodo_pagamento === "debit_card" ? "paid" : "waiting_funds",
-            data_pagamento: new Date(),
+            data_pagamento: paymentDate,
+            fee: transaction.metodo_pagamento === "debit_card" ? "3%" : "5%",
             transacao_id: transactionId
         })
     }
