@@ -18,6 +18,8 @@
 ## Testando o funcionamento.
 
  - Fiz todos os testes utilizando o software "Insomnia" -> link para download (https://insomnia.rest/download)
+ 
+ - Para que os testes possam ser feitos, é necessário criar um banco de dados MySQL e preencher um arquivo .env na pasta psp-pagarme. Na pasta psp-pagarme já existe um arquivo chamado .env.exemple com o modelo de todas as variaveis de ambientes que precisam ser preenchidas com informaçoes do banco de dados local.
 
  - Para criar uma nova transação é necessário utilizar a rota '/transactions' com verbo HTTP POST e enviar um body.json como o do exemplo abaixo:
  
