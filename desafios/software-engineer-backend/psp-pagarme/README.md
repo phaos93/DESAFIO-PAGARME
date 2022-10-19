@@ -32,6 +32,16 @@
 	"codigo_CVV": "123"
 }
 ```
+- Ao criar uma nova transação, as informações do payable já são inseridas em sua tabela no banco de dados, para o exemplo a cima, serão enviadas as seguintes informações para a tabela payables:
+ ```bash
+{
+	"id": 1,
+	"status": "paid",
+	"data_pagamento": "2022-10-19T20:04:25.000Z",
+	"fee": "3%",
+	"transacao_id": 1
+}
+```
 - Para ver todas as transações é necessário utilizar a rota '/transactions' com verbo HTTP tipo GET;
 - Para ver apenas uma transação específica é necessário utilizar a rota '/transactions/:id' com verbo HTTP tipo GET;
 - Para ver todos os payables é necessário utilizar a rota '/payables' com verbo HTTP tipo GET;
