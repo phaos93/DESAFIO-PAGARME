@@ -1,7 +1,5 @@
 import { Module } from '@nestjs/common';
 import { SequelizeModule } from '@nestjs/sequelize/dist/sequelize.module';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
 import { TransactionController } from './controllers/transactions.controller';
 import { PayablesService } from './services/payables.service';
 import { TransactionsService } from './services/transactions.service';
@@ -9,6 +7,8 @@ import { Payable } from './models/payables.model';
 import { Transaction } from './models/transactions.model';
 import { ConfigModule } from '@nestjs/config/dist/config.module';
 import { PayableController } from './controllers/payables.controller';
+import { BalanceController } from './controllers/balance.controller';
+import { BalanceService } from './services/balance.service';
 
 @Module({
   imports: [
@@ -25,7 +25,7 @@ import { PayableController } from './controllers/payables.controller';
     }),
     SequelizeModule.forFeature([Transaction, Payable]),
   ],
-  controllers: [AppController, TransactionController, PayableController],
-  providers: [AppService, TransactionsService, PayablesService],
+  controllers: [TransactionController, PayableController, BalanceController],
+  providers: [TransactionsService, PayablesService, BalanceService],
 })
 export class AppModule { }
