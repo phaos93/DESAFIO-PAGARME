@@ -33,9 +33,9 @@
 }
 ```
 - Para ver todas as transações é necessário utilizar a rota '/transactions' com verbo HTTP tipo GET;
-- Para ver apenas uma transação especifica é necessário utilizar a rota '/transactions/:id' com verbo HTTP tipo GET;
+- Para ver apenas uma transação específica é necessário utilizar a rota '/transactions/:id' com verbo HTTP tipo GET;
 - Para ver todos os payables é necessário utilizar a rota '/payables' com verbo HTTP tipo GET;
-- Para ver apenas um payable especifico é necessário utilizar a rota '/payables/:id' com verbo HTTP tipo GET;
+- Para ver apenas um payable específico é necessário utilizar a rota '/payables/:id' com verbo HTTP tipo GET;
 - Para verificar o saldo é necessário utilizar a rota '/balance'
 
 ##Obrigado!
