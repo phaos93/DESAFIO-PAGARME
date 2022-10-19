@@ -36,7 +36,7 @@ export class TransactionsService {
 
     async post(transaction: Transaction) {
         transaction.numero_cartao = formatCard(transaction.numero_cartao);
-        transaction.valor = transaction.metodo_pagamento === "debit_card" ? parseFloat(formatValue(transaction.valor - (transaction.valor * 0.03))) : parseFloat(formatValue(transaction.valor - (transaction.valor * 0.05)));
+        transaction.valor = formatValue(transaction);
         this.transactionModel.create(transaction);
         const transactionId = await this.getLastOne() + 1
         const date = new Date()
